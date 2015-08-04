@@ -1,6 +1,6 @@
 %section.full-slider.no-padding
   .slider
-    - data.graduates.each do | grad |
+    - find_graduates(locals.fetch(:category, nil)).each do | grad |
       .slide
         .container
           .profile-row

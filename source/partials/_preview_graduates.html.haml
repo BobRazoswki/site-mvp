@@ -1,5 +1,5 @@
 .slider.lazy-slider
-  - data.graduates.each do |grad|
+  - find_graduates(locals.fetch(:category, nil)).each do |grad|
     .slider-content
       %figure.with-caption
         .image--centered
